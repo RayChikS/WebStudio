@@ -22,7 +22,7 @@
 
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-content container">
         <nav class="nav">
           <a class="logo link" href="./index.html"
@@ -56,11 +56,11 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
 
     <!-- MAIN -->
     <main class="main">
-      <!-- <section class="intro section">
+      <section class="intro section">
         <div class="intro-content container">
           <h1 class="intro-title">Effective Solutions for Your Business</h1>
 
@@ -68,7 +68,7 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="advantages section">
         <div class="advantages-content container">
@@ -142,7 +142,7 @@
             <li class="about-item">
               <img
                 class="about-image"
-                srcset=""
+                srcset="./images/about/img1.jpg 1x, ./images/about/img1.jpg 2x"
                 src="./images/about/img1.jpg"
                 alt="computer with diagrams"
                 width="360"
@@ -152,7 +152,11 @@
             <li class="about-item">
               <img
                 class="about-image"
-                src="./images/img2.jpg"
+                srcset="
+                  ./images/about/img2.jpg    1x,
+                  ./images/about/img2-2x.jpg 2x
+                "
+                src="./images/about/img2.jpg"
                 alt="phone with chat"
                 width="360"
                 height="300"
@@ -161,7 +165,11 @@
             <li class="about-item">
               <img
                 class="about-image"
-                src="./images/img3.jpg"
+                srcset="
+                  ./images/about/img3.jpg    1x,
+                  ./images/about/img3-2x.jpg 2x
+                "
+                src="./images/about/img3.jpg"
                 alt="phone in a hand"
                 width="360"
                 height="300"
@@ -490,7 +498,7 @@
       </div>
     </footer>
 
-    <div data-modal class="modal is-hidden">
+    <!-- <div data-modal class="modal is-hidden">
       <div class="modal-vindow">
         <button class="modal-close" data-modal-close type="button">
           <svg class="modal-icon-close" width="8" height="8">
@@ -585,6 +593,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>

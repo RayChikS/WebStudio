@@ -190,6 +190,49 @@ button {
 	color: var(--ocean);
 } */
 
+.header {
+	border-bottom: 1px solid #e7e9fc;
+	background: var(--white);
+	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+}
+
+.logo {
+	color: var(--iris);
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 21px;
+	letter-spacing: 0.54px;
+	text-transform: uppercase;
+}
+
+
+.logo-span {
+	color: var(--navyblue);
+}
+
+.nav-list {
+	display: none;
+}
+
+.nav-element {}
+
+.nav-item {}
+
+.current {}
+
+.address {
+	display: none;
+}
 
 
 
@@ -460,6 +503,66 @@ button {
 	border-color: #404bbf;
 	color: #404bbf;
 } */
+
+.intro-content{
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+}
+.intro {
+	/* width: 428px;
+	height: 432px; */
+	margin: 0 auto;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)),
+		url(../images/hero-image.jpg);
+	background-size: cover;
+	padding: 112px 0;
+	max-width: 428px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.intro-title {
+	color: var(--white, #FFF);
+	text-align: center;
+	margin: 0 auto;
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: 0.72px;
+	text-transform: capitalize;
+	width: 320px;
+	height: 80px;
+}
+
+.intro-button {
+	display: block;
+	color: var(--white);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 150%;
+	letter-spacing: 0.64px;
+	background-color: var(--iris);
+	cursor: pointer;
+	min-width: 169px;
+	height: 56px;
+	border: none;
+	border-radius: 4px;
+	margin: 0 auto;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.intro-button:hover,
+.intro-button:focus {
+	background-color: var(--ocean);
+}
+
+
+
+
+
+
 
 .advantages {
 	background: var(--white);
@@ -1331,7 +1434,13 @@ button {
 */
 
 
-
+@media (min-resolution: 192dpi) {
+	.intro {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+					rgba(46, 47, 66, 0.7)),
+				url(../images/hero-image-2x.jpg);
+	}
+}
 
 @media (min-width:768) {}
 
