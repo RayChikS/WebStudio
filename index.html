@@ -28,7 +28,18 @@
           <a class="logo link" href="./index.html"
             >Web<span class="logo-span">Studio</span>
           </a>
-          <ul class="nav-list list">
+
+          <button
+            class="menu-toggle js-open-menu style-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="toggle-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list menu list">
             <li class="nav-element">
               <a class="nav-item link current" href="./index.html">Studio</a>
             </li>
@@ -41,7 +52,7 @@
           </ul>
         </nav>
 
-        <address class="address">
+        <address class="menu address">
           <ul class="address-list list">
             <li class="address-element">
               <a class="address-item link" href="mailto:info@devstudio.com"
@@ -498,7 +509,7 @@
       </div>
     </footer>
 
-    <!-- <div data-modal class="modal is-hidden">
+    <div data-modal class="modal is-hidden">
       <div class="modal-vindow">
         <button class="modal-close" data-modal-close type="button">
           <svg class="modal-icon-close" width="8" height="8">
@@ -593,6 +604,27 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-close js-close-menu" data-modal-close type="button">
+        <svg class="modal-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-element">
+          <a class="mobile-item link current" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-element">
+          <a class="mobile-item link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-element">
+          <a class="mobile-item link" href="">Contacts</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

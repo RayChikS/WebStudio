@@ -202,6 +202,7 @@ button {
 }
 
 .nav {
+	padding: 25px 0;
 }
 
 .logo {
@@ -233,6 +234,7 @@ button {
 .address {
 	display: none;
 }
+
 
 
 
@@ -613,15 +615,6 @@ button {
 	letter-spacing: 0.02em;
 }
 
-
-
-
-
-
-
-.about{
-	display: none;
-}
 
 
 
@@ -1228,7 +1221,7 @@ button {
 	|============================
 */
 
-/* 
+
 .modal{
 	position: fixed;
 	top: 0;
@@ -1422,7 +1415,37 @@ button {
 .modal-btn:hover
 {
 	background-color: #404BBF;
-} */
+}
+
+
+
+/**
+	|============================
+	| MOBILE-MENU
+	|============================
+*/
+
+
+
+
+.menu-toggle{
+	min-width: 40px;
+	min-height: 40px;
+	background: transparent;
+	border: none;
+}
+.toggle-icon{
+	fill: var(--navyblue);
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1434,11 +1457,20 @@ button {
 */
 
 
+
+
 @media (min-resolution: 192dpi) {
 	.intro {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 					rgba(46, 47, 66, 0.7)),
 				url(../images/hero-image-2x.jpg);
+	}
+}
+
+
+@media (max-width: 1157px) {
+	.about {
+		display: none;
 	}
 }
 
