@@ -1015,7 +1015,12 @@ button {
 	margin-left: 16px;
 }
 
-.subscribe {}
+.subscribe {
+	width: 100%;
+}
+.subscribe-lable{
+	width: 100%;
+}
 
 .subscribe-title {
 	margin-bottom: 16px;
@@ -1092,7 +1097,7 @@ button {
 	| MAIN-PORTFOLIO
 	|============================
 */
-/* 
+ 
 
 
 
@@ -1208,7 +1213,7 @@ button {
 .gallery-link:hover .gallery-img-p,
 .gallery-link:focus .gallery-img-p{
 	transform: translateY(0%);
-} */
+} 
 
 
 
@@ -1443,7 +1448,6 @@ button {
 	min-width: 40px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 
 	margin: 0;
 	padding: 0;
@@ -1452,7 +1456,7 @@ button {
 	border: none;
 	border-radius: 50%;
 	outline: none;
-	margin-left: 249px;
+	margin-left: auto;
 }
 
 .menu-toggle:hover,
@@ -1471,12 +1475,16 @@ button {
 	padding-top: 80px;
 	padding-bottom: 40px;
 	padding-left: 40px;
+	padding-right: 25px;
 	background-color: var(--white);
 	z-index: 999;
+	
 
 	transform: translateX(100%);
 	transition: transform 250ms ease-in-out;
 }
+
+
 
 .menu-container.is-open {
 	transform: translateX(0);
@@ -1561,9 +1569,8 @@ button {
 
 .mobile-info-list {
 	display: inline-flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	gap: 56px;
 }
 
 .mobile-info-list-item {
@@ -1596,7 +1603,11 @@ button {
 	|============================
 */
 
-
+@media (max-width:428px){
+	.mobile-address-item-tel {
+		font-size: 21px;
+	}
+}
 
 @media (max-width: 767px) {
 	.menu {
