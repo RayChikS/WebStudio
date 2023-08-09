@@ -33,9 +33,9 @@ body{
 }
 
 .container {
-	width: 426px;
+	max-width: 428px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 16px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -191,6 +191,7 @@ button {
 } */
 
 .header {
+	padding: 25px 0;
 	border-bottom: 1px solid #e7e9fc;
 	background: var(--white);
 	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -204,7 +205,6 @@ button {
 .nav {
 	display: flex;
 	align-items: center;
-	padding: 25px 0;
 }
 
 .logo {
@@ -519,7 +519,7 @@ button {
 	margin: 0 auto;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 			rgba(46, 47, 66, 0.7)),
-		url(../images/hero-image.jpg);
+		url(../images/mobile-hero-bg.jpg);
 	background-size: cover;
 	padding: 112px 0;
 	background-repeat: no-repeat;
@@ -569,12 +569,11 @@ button {
 
 .advantages {
 	background: var(--white);
-}
-
-.advantages-content {
 	padding-top: 96px;
 	padding-bottom: 96px;
 }
+
+
 
 .advantages-title {
 	color: var(--navyblue);
@@ -605,6 +604,7 @@ button {
 	line-height: 40px;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
+	margin-bottom: 8px;
 }
 
 .advantages-text {
@@ -624,9 +624,6 @@ button {
 
 .team {
 	background-color: #F4F4FD;
-}
-
-.team-content {
 	padding-top: 96px;
 	padding-bottom: 96px;
 }
@@ -666,6 +663,7 @@ button {
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: 0.4px;
+	margin-bottom: 8px;
 }
 
 .team-text {
@@ -674,6 +672,7 @@ button {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.32px;
+	margin-bottom: 8px;
 }
 
 .team-info {
@@ -1462,12 +1461,16 @@ button {
 }
 
 .menu-container {
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	padding: 32px;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	padding-left: 40px;
 	background-color: var(--white);
 	z-index: 999;
 
@@ -1490,12 +1493,10 @@ button {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	margin-bottom: 284px;
+	margin-bottom: auto;
 }
 
-.mobile-menu .link {
-	
-}
+
 .mobile-item {
 	color: var(--navyblue);
 	font-size: 36px;
@@ -1507,9 +1508,16 @@ button {
 	padding: 10px;
 	text-decoration: none;
 }
-.mobile-item:hover,
-.mobile-item:focus{
+.mobile-item-studio{
 	color: var(--ocean);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.72px;
+	text-transform: capitalize;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
 }
 
 
@@ -1527,7 +1535,7 @@ button {
 
 
 .mobile-address-item-tel {
-	color: var(--navyblue);
+	color: var(--ocean);
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 40px;
@@ -1546,19 +1554,15 @@ button {
 	letter-spacing: 0.4px;
 }
 
-.mobile-address-item:hover,
-.mobile-address-item:focus
-{
-	color: var(--iris);
-}
 
 
 
 
 
 .mobile-info-list {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
+	align-items: center;
 	gap: 56px;
 }
 
@@ -1611,7 +1615,7 @@ button {
 	.intro {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 					rgba(46, 47, 66, 0.7)),
-				url(../images/hero-image-2x.jpg);
+				url(../images/mobile-hero-bg-2x.jpg);
 	}
 }
 
