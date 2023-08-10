@@ -196,17 +196,14 @@ button {
 	background: var(--white);
 	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-
 .header-content {
 	display: flex;
 	align-items: center;
 }
-
 .nav {
 	display: flex;
 	align-items: center;
 }
-
 .logo {
 	color: var(--iris);
 	font-family: 'Raleway', sans-serif;
@@ -217,27 +214,9 @@ button {
 	letter-spacing: 0.54px;
 	text-transform: uppercase;
 }
-
-
 .logo-span {
 	color: var(--navyblue);
 }
-
-.nav-list {
-	display: none;
-}
-
-.nav-element {}
-
-.nav-item {}
-
-.current {}
-
-.address {
-	display: none;
-}
-
-
 
 
 
@@ -526,6 +505,7 @@ button {
 	background-position: center;
 }
 
+
 .intro-title {
 	color: var(--white, #FFF);
 	text-align: center;
@@ -591,11 +571,7 @@ button {
 	gap: 72px;
 }
 
-.advantages-item {}
 
-.advantages-item-content {
-	display: none;
-}
 
 .advantages-subtitle {
 	color: var(--navyblue);
@@ -937,7 +913,6 @@ button {
 	gap: 72px;
 }
 
-.footer-content-text {}
 
 .footer-logo {
 	display: block;
@@ -1613,21 +1588,202 @@ button {
 	.menu {
 		display: none;
 	}
+	.nav-list{
+		display: none;
+	}
+		.address {
+			display: none;
+		}
 }
 
 
+@media (min-resolution: 192dpi) and (max-width:767px) {
+	.intro {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)),
+			url(../images/hero-bg/mobile-hero-bg-2x.jpg);
+	}
+}
+@media (min-resolution: 192dpi) and (max-width:1157px) {
+	.intro {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)),
+			url(../images/hero-bg/tablet-hero-bg-2x.jpg);
+	}
+}
+@media (min-resolution: 192dpi) and (min-width:1158px) {
+	.intro {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)),
+			url(../images/mobile-hero-bg-2x.jpg);
+	}
+}
+
 @media (min-width: 768px) {
+
 	.menu-toggle {
 		display: none;
 	}
-}
 
-@media (min-resolution: 192dpi) {
-	.intro {
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-					rgba(46, 47, 66, 0.7)),
-				url(../images/mobile-hero-bg-2x.jpg);
+
+	/**
+		|============================
+		| HEADER
+		|============================
+	*/
+
+	.header{
+		padding: 0;
 	}
+	
+
+		.nav-list{
+			display: flex;
+		}
+	
+		.nav-item {
+			position: relative;
+			color: var(--navyblue);
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 150%;
+			letter-spacing: 0.02em;
+			
+			display: block;
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	
+		.nav-item:hover,
+		.nav-item:focus {
+			color: #404bbf;
+		}
+	
+		.nav-item:active {
+			color: var(--ocean);
+		}
+	
+		.nav-item::after {
+			position: absolute;
+			color: var(--ocean);
+			content: "";
+			left: 0;
+			opacity: 0;
+			bottom: -1px;
+			height: 4px;
+			background-color: var(--ocean);
+			border-radius: 2px;
+			width: 100%;
+		}
+	
+		.nav-item:hover::after,
+		.nav-item:focus::after,
+		.nav-item.current::after {
+			opacity: 1;
+		}
+	
+		.nav-item.current {
+			color: #404bbf;
+		}
+
+
+		.address{
+			font-style: normal;
+		}
+
+		.address-item{
+			color: var(--slate);
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.32px;transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+		.address-item:hover,
+		.address-item:focus{
+			color: #404bbf;
+		}
+		.address-item:active{
+			color: var(--ocean);
+		}
+
+
+		/**
+			|============================
+			| MAIN
+			|============================
+		*/
+
+
+				.intro {
+					background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+							rgba(46, 47, 66, 0.7)),
+						url(../images/hero-bg/tablet-hero-bg.jpg);
+				}
+
+				.intro-content{
+					gap: 36px;
+				}
+
+
+				.intro-title {
+					font-size: 56px;
+					min-width: 496px;
+					height: 120px;
+					line-height: 60px;
+				}
+
+
+				.advantages-list{
+					flex-direction: row;
+					flex-wrap: wrap;
+					gap: 72px 24px;
+				}
+				.advantages-item{
+					width: calc((100% - 24px) / 2);
+				}
+
+
+
+
+
+				.team-list{
+					flex-direction: row;
+					flex-wrap: wrap;
+					gap: 64px 24px;
+				}
+				.team-item{
+					width: calc((100% - 24px) / 2);
+				}
+
+
+
+
+				.customers-list{
+					flex-direction: row;
+					flex-wrap: wrap;
+					gap: 72px 24px;
+				}
+
+				.customers-item{
+					width: calc((100% - 48px) / 3);
+				}
+				
+
+				/**
+					|============================
+					| FOOTER
+					|============================
+				*/
+
+
+				.footer-content{
+					flex-direction: row;
+				}
+
+				.subscribe-form{
+					flex-direction: row;
+				}
+
 }
 
 
@@ -1635,9 +1791,11 @@ button {
 	.about {
 		display: none;
 	}
+	.advantages-item-content {
+		display: none;
+	}
 }
 
-@media (min-width:768) {}
 
 
 @media (min-width:1158) {}
