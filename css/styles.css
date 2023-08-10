@@ -993,7 +993,8 @@ button {
 .subscribe {
 	width: 100%;
 }
-.subscribe-lable{
+
+.subscribe-label{
 	width: 100%;
 }
 
@@ -1408,7 +1409,6 @@ button {
 
 
 .menu .link {
-	padding: 10px;
 	color: inherit;
 	text-decoration: none;
 }
@@ -1488,7 +1488,6 @@ button {
 	letter-spacing: 0.72px;
 	text-transform: capitalize;
 	display: block;
-	padding: 10px;
 	text-decoration: none;
 }
 .mobile-item-studio{
@@ -1499,10 +1498,12 @@ button {
 	letter-spacing: 0.72px;
 	text-transform: capitalize;
 	display: block;
-	padding: 10px;
 	text-decoration: none;
 }
 
+.mobile-element:not(:last-child){
+	margin-bottom: 40px;
+}
 
 
 
@@ -1578,7 +1579,14 @@ button {
 	|============================
 */
 
-@media (max-width:428px){
+
+/**
+	|============================
+	| Mobile
+	|============================
+*/
+
+@media (max-width:427px){
 	.mobile-address-item-tel {
 		font-size: 21px;
 	}
@@ -1597,6 +1605,7 @@ button {
 }
 
 
+
 @media (min-resolution: 192dpi) and (max-width:767px) {
 	.intro {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -1604,20 +1613,16 @@ button {
 			url(../images/hero-bg/mobile-hero-bg-2x.jpg);
 	}
 }
-@media (min-resolution: 192dpi) and (max-width:1157px) {
-	.intro {
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-				rgba(46, 47, 66, 0.7)),
-			url(../images/hero-bg/tablet-hero-bg-2x.jpg);
-	}
-}
-@media (min-resolution: 192dpi) and (min-width:1158px) {
-	.intro {
-		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-				rgba(46, 47, 66, 0.7)),
-			url(../images/mobile-hero-bg-2x.jpg);
-	}
-}
+
+
+
+
+
+/**
+	|============================
+	| TABLET
+	|============================
+*/
 
 @media (min-width: 768px) {
 
@@ -1640,10 +1645,13 @@ button {
 		padding: 0;
 	}
 	
+	.logo{
+		margin-right: 120px;
+	}
 
 		.nav-list{
 			display: flex;
-			
+			gap: 40px;
 		}
 	
 		.nav-item {
@@ -1654,7 +1662,7 @@ button {
 			font-weight: 500;
 			line-height: 150%;
 			letter-spacing: 0.02em;
-			
+			padding: 24px 0;
 			display: block;
 			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
@@ -1694,13 +1702,14 @@ button {
 
 		.address{
 			font-style: normal;
+			margin-left: auto;
 		}
 
 		.address-item{
 			color: var(--slate);
 			font-family: 'Roboto', sans-serif;
-			font-size: 16px;
-			line-height: 150%;
+			font-size: 12px;
+			line-height: 14px;
 			letter-spacing: 0.32px;transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
 		.address-item:hover,
@@ -1786,14 +1795,66 @@ button {
 
 				.footer-content{
 					flex-direction: row;
+					flex-wrap: wrap;
+					gap: 72px 24px;
+					justify-content: unset;
+				}
+				.footer-text {
+					min-width: 264px;
+				}
+				.footer-logo{
+					text-align: left;
+				}
+				.footer-social-text{
+					text-align-last: left;
 				}
 
+
+				.subscribe{
+					width: unset;
+				}
+				.subscribe-input{
+					min-width: 264px;
+				}
 				.subscribe-form{
 					flex-direction: row;
+					justify-content: start;
+				}
+				.subscribe-title{
+					text-align: unset;
 				}
 
 }
+@media screen and (min-width:768px) and (max-width:1157px) {
+	.team-content {
+		max-width: 584px;
+	}
 
+	.customers-contant {
+		max-width: 584px;
+	}
+
+	.footer-content {
+		max-width: 584px;
+	}
+
+}
+
+@media (min-resolution: 192dpi) and (min-width:768px) and (max-width:1157px) {
+	.intro {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)),
+			url(../images/hero-bg/tablet-hero-bg-2x.jpg);
+	}
+}
+
+
+
+/**
+	|============================
+	| DESCTOP
+	|============================
+*/
 
 @media (max-width: 1157px) {
 	.about {
@@ -1804,11 +1865,15 @@ button {
 	}
 }
 
-
-
 @media (min-width:1158) {}
 
-
+@media (min-resolution: 192dpi) and (min-width:1158px) {
+	.intro {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)),
+			url(../images/mobile-hero-bg-2x.jpg);
+	}
+}
 
 
 
