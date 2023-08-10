@@ -1625,6 +1625,10 @@ button {
 		display: none;
 	}
 
+	.container{
+		max-width: 768px;
+	}
+
 
 	/**
 		|============================
@@ -1639,6 +1643,7 @@ button {
 
 		.nav-list{
 			display: flex;
+			
 		}
 	
 		.nav-item {
@@ -1732,7 +1737,9 @@ button {
 					line-height: 60px;
 				}
 
-
+				.advantages-subtitle{
+					text-align: start;
+				}
 				.advantages-list{
 					flex-direction: row;
 					flex-wrap: wrap;
@@ -1766,6 +1773,7 @@ button {
 
 				.customers-item{
 					width: calc((100% - 48px) / 3);
+					height: 88px;
 				}
 				
 
